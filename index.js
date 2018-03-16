@@ -14,6 +14,10 @@ console.log("NodeJS SocketIO Server started on port " + portNum);
 // listend for chat messages
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
-    io.emit('chat message', msg);
+    if (msg.includes("/nick")) {
+      console.log("Trying to set nickname");
+    } else {
+      io.emit('chat message', msg);
+    }
   });
 });
