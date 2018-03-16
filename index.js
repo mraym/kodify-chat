@@ -11,11 +11,15 @@ var portNum = 3000;
 var io = sockio.listen(app.listen(portNum), {log: true});
 console.log("NodeJS SocketIO Server started on port " + portNum);
 
-// listend for chat messages
+// listen for chat messages
 io.on('connection', function(socket){
   socket.on('chat message', function(msg){
     if (msg.includes("/nick")) {
       console.log("Trying to set nickname");
+    } else if (msg.includes("/think")) {
+      console.log("Trying to think...");
+    } else if (msg.includes("/oops")) {
+      console.log("Trying to delete your last msg");
     } else {
       io.emit('chat message', msg);
     }
