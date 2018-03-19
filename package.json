@@ -1,9 +1,0 @@
-{
-  "name": "kodify-chat",
-  "version": "0.0.1",
-  "description": "chat app for kodify",
-  "dependencies": {
-    "express": "^4.16.3",
-    "socket.io": "^2.0.4"
-  }
-}
