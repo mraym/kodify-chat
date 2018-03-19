@@ -2,14 +2,9 @@
 
 ## Setup
 
-1. Create package.json
+1. Install create-react-app
 ```
-{
-  "name": "kodify-chat",
-  "version": "0.0.1",
-  "description": "chat for kodify",
-  "dependencies": {}
-}
+npm install -g create-react-app
 ```
 
 2. Install packages
@@ -19,6 +14,17 @@ npm install socket.io --save
 ```
 
 ## Start the server
+
+This will start the server on port 8890
 ```
-node index.js
+node server.js
 ```
+
+## Start the client
+
+This will start the web app client on port 3000
+
+```
+npm start
+```
+
