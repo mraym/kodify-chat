@@ -4,6 +4,10 @@
 
 I couldn't finish and now I have to go to Seville :(
 
+Had trouble with:
+
+- Once second user replies to the chat, all chat bubbles turn green
+
 The main files are:
 
 For the React client app:
